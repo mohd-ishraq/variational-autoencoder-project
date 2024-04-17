@@ -1,14 +1,25 @@
-FOR MY CODE TO RUN SUCCESSFULLY YOU NEED BELOW PACKAGES IN YOUR ENVIRONMENT
+Variational Autoencoder Project
+Overview
+This project implements a variational autoencoder (VAE) using TensorFlow and demonstrates its functionality through interactive graphical user interfaces (GUI) in Jupyter Notebooks. The VAE is trained on the FER2013 dataset for facial expression recognition.
 
-numpy==1.20.0\
-tensorflow==2.8.0\
-ipywidgets==7.6.5\
-Pillow==8.2.0\
+Files
+Mohammed_01.ipynb: Jupyter Notebook for GUI display and interaction. This notebook directly calls the saved trained models to run.
+Mohammed_02.ipynb: Jupyter Notebook for complete model training and GUI output. This notebook includes code for model training, saving the models, and GUI interaction.
+Dependencies
+Ensure you have the following dependencies installed in your environment:
 
-My model has been trained on FER2013 dataset. Below are the instruction for my project:
-1. I have stored two .ipynb files, VAE_01.ipynb displays the only GUI output calling the saved trained models from the folder
-2. The second file VAE_02.ipynb displays the code for training both the models and GUI output.
-3. I have stored both the models in the folder VAE.
-4. For you to check my GUI you can restart and run the VAE_01.ipynb file it will take less than 10s to run all the cell.
-5. Rerun Cell 3 in VAE_01.ipynb file if it shows any error while interacting with the GUI, Once rerun it will work perfectly.
-6. For Task two upload a image from dataset and you can immediately interact with the images  reconstructed images from both the models
+numpy==1.20.0
+tensorflow==2.8.0
+ipywidgets==7.6.5
+Pillow==8.2.0
+Instructions
+Run Mohammed_01.ipynb to interact with the GUI. This notebook directly calls the saved trained models to display the results.
+If encountering any errors while interacting with the GUI in Mohammed_01.ipynb, rerun Cell 3.
+For Task two, upload an image from the FER2013 dataset in Mohammed_02.ipynb and interact with the reconstructed images from both models.
+Dataset
+The models have been trained on the FER2013 dataset, which contains facial images with labeled emotions.
+
+Notes
+The provided code includes functions for mean squared error (MSE) calculation, structural similarity index (SSIM), and peak signal-to-noise ratio (PSNR) calculation.
+Trained models are stored in the Mohammed_05 folder.
+Ensure to adjust file paths in the code according to your system configuration.
